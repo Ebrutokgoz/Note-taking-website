@@ -1,0 +1,66 @@
+.list-group-item{
+    border: 0px !important;
+}
+
+.defter{
+    box-shadow: 0 0 0 #ccc;
+    transition: box-shadow .5s;
+   
+}
+
+.defter:hover {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.defter > .card-body {
+    display: none;
+}
+
+.defter > .card-body {
+    position: absolute;
+    background-color: white;
+    top: 201px;
+    z-index: 1000;
+}
+
+.defter:hover > .card-body {
+    display: block !important;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+
+ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .defter > .card-body {
+        top: 334px;
+        }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .defter > .card-body {
+        top: 141px;
+        }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .defter > .card-body {
+        top: 141px;
+        }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .defter > .card-body {
+    top: 170px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .defter > .card-body {
+        top: 199px;
+    }
+ }
